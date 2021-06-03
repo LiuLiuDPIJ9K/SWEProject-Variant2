@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="board" prefHeight="300.0" prefWidth="1200.0" style="-fx-border-size: 3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boxgame.javafx.controller.BoxGameController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="75.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="150.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="225.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="300.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="375.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="450.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="525.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="600.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="675.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="750.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="825.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="900.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="975.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="1050.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="1125.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <VBox alignment="CENTER" prefHeight="150.0" prefWidth="1200.0">
+         <children>
+            <Label text="Game Rules:">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </Label>
+            <Label text="•Take out two adjacent circles each time and put into two adjacent square.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label text="•TODO">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label text="•When forming a line of circles with the first three being the color red wins the game.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutY="225.0" prefHeight="75.0" prefWidth="1200.0">
+         <children>
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleResetButton" text="Reset">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="150.0" />
+               </HBox.margin>
+            </Button>
+            <Label text="Steps:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="stepsLabel" text="0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="150.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="giveUpButton" mnemonicParsing="false" text="Give Up">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
